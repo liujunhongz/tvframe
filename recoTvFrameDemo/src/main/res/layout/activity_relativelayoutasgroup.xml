@@ -1,0 +1,93 @@
+<!-- animationType 默认无动画 此处设为平移
+	 durationTranslate 平移用时 默为7ms
+	 boarderInt 选中框边缘宽度-->
+<reco.frame.tv.view.TvRelativeLayoutAsGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tv="http://schemas.android.com/apk/res/reco.frame.demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingTop="@dimen/px200"
+    android:paddingLeft="@dimen/px100"
+    tv:animationType="TRANSLATE"
+    tv:durationTranslate="11"
+    tv:boarderInt="2"
+    tv:cursorRes="@drawable/cursor_rectangle_boarder_orange" >
+
+    <Button
+        android:id="@+id/fsb_flush"
+        android:layout_width="@dimen/px550"
+        android:layout_height="@dimen/px550"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/icon_storm"
+        android:nextFocusRight="@+id/fsb_gabage" />
+
+    <Button
+        android:id="@+id/fsb_gabage"
+        android:layout_width="@dimen/px550"
+        android:layout_height="@dimen/px270"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_toRightOf="@+id/fsb_flush"
+        android:background="@drawable/icon_storm"
+        android:nextFocusDown="@+id/fsb_uninstall" />
+
+    <Button
+        android:id="@+id/fsb_bigfile"
+        android:layout_width="@dimen/px270"
+        android:layout_height="@dimen/px270"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_toRightOf="@+id/fsb_gabage"
+        android:background="@drawable/icon_storm" />
+
+    <Button
+        android:id="@+id/fsb_netspeed"
+        android:layout_width="@dimen/px270"
+        android:layout_height="@dimen/px270"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_toRightOf="@+id/fsb_bigfile"
+        android:background="@drawable/icon_storm" />
+
+    <Button
+        android:id="@+id/fsb_uninstall"
+        android:layout_width="@dimen/px270"
+        android:layout_height="@dimen/px270"
+        android:layout_below="@+id/fsb_gabage"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_marginTop="@dimen/px10"
+        android:layout_toRightOf="@+id/fsb_flush"
+        android:background="@drawable/icon_storm" />
+
+    <Button
+        android:id="@+id/fsb_apk"
+        android:layout_width="@dimen/px270"
+        android:layout_height="@dimen/px270"
+        android:layout_below="@+id/fsb_gabage"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_marginTop="@dimen/px10"
+        android:layout_toRightOf="@+id/fsb_uninstall"
+        android:background="@drawable/icon_storm" />
+
+    <Button
+        android:id="@+id/fsb_system"
+        android:layout_width="@dimen/px270"
+        android:layout_height="@dimen/px270"
+        android:layout_below="@+id/fsb_bigfile"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_marginTop="@dimen/px10"
+        android:layout_toRightOf="@+id/fsb_apk"
+        android:background="@drawable/icon_storm" />
+
+    <Button
+        android:id="@+id/fsb_setting"
+        android:layout_width="@dimen/px270"
+        android:layout_height="@dimen/px270"
+        android:layout_below="@+id/fsb_netspeed"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_marginTop="@dimen/px10"
+        android:layout_toRightOf="@+id/fsb_system"
+        android:background="@drawable/icon_storm" />
+
+</reco.frame.tv.view.TvRelativeLayoutAsGroup>

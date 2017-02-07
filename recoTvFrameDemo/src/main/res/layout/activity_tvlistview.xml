@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tv="http://schemas.android.com/apk/res/reco.frame.demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    >
+    <!-- 此处有四个自定义参数: cursorRes指定光标图片 itemWidth为子项宽度 itemHeight为子项高度 focusOption为焦点模式(默认子控件得焦点)-->
+    <reco.frame.tv.view.TvListView 
+        android:id="@+id/tlv_list"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px700"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/px400"
+        android:layout_marginTop="@dimen/px100"
+        tv:cursorRes="@drawable/cursor_rectangle_boarder_orange"
+        tv:itemWidth="@dimen/px1122"
+        tv:itemHeight="@dimen/px80"
+        tv:paddingLeft="@dimen/px21"
+        tv:focusOption="CHILD_ONLY"
+        tv:paddingTop="@dimen/px4"
+        >
+    </reco.frame.tv.view.TvListView> 
+
+    <reco.frame.tv.view.TvButton
+        android:id="@+id/tb_add"
+        android:layout_width="@dimen/px200"
+        android:layout_height="@dimen/px100"
+        android:layout_marginLeft="@dimen/px17"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="add"
+        android:text="加载更多"
+        tv:cursorRes="@drawable/cursor_rectangle_boarder_orange"
+        />
+    
+</RelativeLayout>
